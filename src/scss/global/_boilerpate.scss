@@ -1,0 +1,60 @@
+@use './variables' as *;
+@use './responsive' as *;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #c9d6f6;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffffff;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #f19205;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #f37419;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #f37419;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+width: 100%;
+background-color: #ffffff;
+font-family: $fontm;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+@include phone{
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+@include desktop{
+  max-width: 110rem;
+}
+}
