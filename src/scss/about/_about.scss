@@ -1,0 +1,36 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+.about{
+    width: 100%;
+    @extend %align-jusctify-center;
+    gap: 20px;
+&_image{
+    width: 50%;
+    min-height: 600px;
+    background: url(./assets/about/adv-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    padding: 30px;
+&_usersimg{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+}
+&_content{
+    width: 50%;
+    border-radius: 15px;
+}
+}

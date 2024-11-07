@@ -17,7 +17,7 @@ const Nav = () => {
         <li className="nav_listbox_ul_li"><a href="#Advantage" className='nav_listbox_ul_li_a'>Advantage</a></li>
         <li className="nav_listbox_ul_li"><a href="#About" className='nav_listbox_ul_li_a'>About</a></li>
         <li className="nav_listbox_ul_li"><a href="#Location" className='nav_listbox_ul_li_a'>Location</a></li>
-        <li className="nav_listbox_ul_li"><a href="#New" className='nav_listbox_ul_li_a'>New Properties</a></li>
+        <li className="nav_listbox_ul_li"><a href="#Property" className='nav_listbox_ul_li_a'>New Properties</a></li>
         <li className="nav_listbox_ul_li"><a href="#Agents" className='nav_listbox_ul_li_a'>Agents</a></li>
         <li className="nav_listbox_ul_li"><a href="#Estimate" className='nav_listbox_ul_li_a'>Estimate</a></li>
         <li className="nav_listbox_ul_li"><a href="#Contact" className='nav_listbox_ul_li_a'>Contact</a></li>

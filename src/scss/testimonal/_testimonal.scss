@@ -1,0 +1,93 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+.testimonals{
+padding: 20px 12%;
+&_slidebox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+&_user1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+&_img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+&_name{
+    text-align: center;
+    font-size: 14px;
+&_sp{
+display: block;
+font-weight: 300;
+font-size: 10px;
+}
+}
+}
+&_user2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+&_img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+&_name{
+    text-align: center;
+    font-size: 14px;
+&_sp{
+display: block;
+font-weight: 300;
+font-size: 10px;
+}
+}
+}
+&_user3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+&_img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+&_name{
+    text-align: center;
+    font-size: 14px;
+&_sp{
+display: block;
+font-weight: 300;
+font-size: 10px;
+}
+}
+}
+&_usercontent{
+    width: 60%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+&_rating{
+&_img{
+    width: 100px;
+    height: 50px;
+}
+}
+}
+}
