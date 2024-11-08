@@ -1,0 +1,37 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+.agents{
+    width: 100%;
+    @extend %align-jusctify-center;
+    flex-direction: column;
+    padding: 90px 12%;
+&_h2{
+font-size: 50px;
+font-weight: 700;
+&_sp{
+color: $btbg;
+background: url(./assets/shape_text.svg);
+background-repeat: no-repeat;
+background-position: bottom;
+}
+}
+&_sub{
+    font-size: 16px;
+    padding: 10px 0px;
+}
+&_cards{
+    display: flex;
+    gap: 30px;
+    margin: 2rem 0rem;
+}
+}

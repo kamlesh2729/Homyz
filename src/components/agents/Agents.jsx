@@ -6,13 +6,13 @@ import Agent3 from '../../assets/agent/agent03.webp'
 
 const Agents = () => {
   return (
-    <section id="Agents">
-    <h2>Our<span>Agents</span></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto alias quo facere!</p>
-    <div>
+    <section id="Agents" className='agents'>
+    <h2 className='agents_h2'>Our <span className='agents_h2_sp'>Agents</span></h2>
+    <p className='agents_sub'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto alias quo facere!</p>
+    <div className='agents_cards'>
     <div>
     <img src={Agent1} alt="agent-profile-img" />
-    <h2o>Mark Foli</h2o>
+    <h2>Mark Foli</h2>
     <p>Broker</p>
     </div>
     <div>

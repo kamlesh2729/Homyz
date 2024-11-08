@@ -1,0 +1,56 @@
+[
+{
+"image":"/src/assets/listing/Listing_img_1.webp",
+"name":"BlueBerry Vila",
+"location":"mirpur 10, Dhaka",
+"area":"1300",
+"Room":3,
+"shower":3,
+"price":1300
+},
+{
+"image":"/src/assets/listing/Listing_img_2.webp",
+"name":"White House Vila",
+"location":"mirpur 10, Dhaka",
+"area":"1300",
+"Room":3,
+"shower":3,
+"price":1500
+},
+{
+"image":"/src/assets/listing/Listing_img_3.webp",
+"name":"Grey Berry Vila",
+"location":"mirpur 10, Dhaka",
+"area":"1300",
+"Room":3,
+"shower":3,
+"price":999
+},
+{
+"image":"/src/assets/listing/Listing_img_4.webp",
+"name":"BlueBerry Vila",
+"location":"mirpur 10, Dhaka",
+"area":"1300",
+"Room":3,
+"shower":3,
+"price":1300
+},
+{
+"image":"/src/assets/listing/Listing_img_5.webp",
+"name":"BlueBerry Vila",
+"location":"mirpur 10, Dhaka",
+"area":"1300",
+"Room":3,
+"shower":3,
+"price":1300
+},
+{
+"image":"/src/assets/listing/Listing_img_6.webp",
+"name":"BlueBerry Vila",
+"location":"mirpur 10, Dhaka",
+"area":"1300",
+"Room":3,
+"shower":3,
+"price":1300
+}
+]

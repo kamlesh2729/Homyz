@@ -1,0 +1,84 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+.banner{
+    width: 100%;
+    min-height: 400px;
+    @extend %align-jusctify-center;
+    gap: 30px;
+    padding: 90px 12%;
+    background: url(./assets/banner/Banner-bg.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+&_right{
+    width: 50%;
+&_h2{
+    width: 64%;
+    font-size: 50px;
+    color: #fff;
+&_sp{
+    background: url(./assets/shape_text.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+}
+&_sub{
+    font-size: 13px;
+    color: #fff;
+    padding: 15px 0px;
+
+}
+&_btn{
+    border: none;
+    background: #fff;
+    color: $btbg;
+    padding: 8px;
+}
+}
+&_left{
+    width: 50%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+&_box{
+    border-bottom: 1px solid black;
+&_card1{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+&_sp{
+    background: rgb(9, 108, 9);
+    border-radius: 50px;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+&_p{
+    font-size: 12px;
+}
+}
+&_card2{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    padding: 10px 0px;
+}
+}
+&_box2{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    padding: 10px 0px;
+}
+}
+}
