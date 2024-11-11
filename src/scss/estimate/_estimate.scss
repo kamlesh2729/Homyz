@@ -1,0 +1,66 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+.estimate{
+    width: 100%;
+    @extend %align-jusctify-center;
+    flex-direction: column;
+    padding: 90px 12%;
+    background: rgb(255, 248, 244);
+&_h2{
+font-size: 50px;
+font-weight: 700;
+text-align: center;
+&_sp{
+    color: $btbg;
+    background: url(./assets/shape_text.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+}
+&_sub{
+    font-size: 14px;
+    margin-top: 1rem;
+    color: #808080;
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+&_cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+@include tablet{flex-direction: column; text-align: center;}
+&_card{
+    display: flex;
+    flex-direction: column;
+&_img{
+    width: 80%;
+}
+&_h3{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    text-align: center;
+&_sp{
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0px;
+}
+}
+}
+}
+}

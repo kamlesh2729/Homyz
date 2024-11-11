@@ -14,7 +14,9 @@ const Property = () => {
         {Data.map((property,i) => {
           return (
     <div key={i} className='property_cards_card'>
-    <img src={property.image} alt="property-image" className='property_cards_card_img' />
+    <div className="property_cards_card_imgbox">            
+    <img src={property.image} alt="property-image" className='property_cards_card_imgbox_img' />
+    </div>
     <h2 className='property_cards_card_name'>{ property.name}</h2>
     <p className='property_cards_card_location'>{ property.location}</p>
     <div className='property_cards_card_infobox'>

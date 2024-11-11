@@ -1,0 +1,92 @@
+@use '../global' as *;
+
+%align-jusctify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+.contact{
+width: 100%;
+@extend %align-jusctify-center;
+flex-direction: column;
+padding: 10px 12% 0px 12%;
+&_cbox{
+width: 100%;
+height: 300px;
+background: url(./assets/footer/footer_bg.svg);
+background-size: contain;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+@include tablet{background-size: cover;}
+@include phone{background-size: cover;}
+&_h2{
+width: 60%;
+font-size: 50px;
+@include phone{
+    width: 100%;
+}
+&_sp{
+color: $btbg;
+background: url(./assets/shape_text.svg);
+background-repeat: no-repeat;
+background-position: bottom;
+}
+}
+}
+&_footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 2rem;
+    gap: 20px;
+@include tablet{grid-template-columns: repeat(2, 1fr);}
+@include phone{grid-template-columns: repeat(1, 1fr); text-align: center;}
+&_box1{
+&_h3{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+&_sub{
+    font-size: 16px;
+    margin: 8px 0px;
+    color: #808080;
+    line-height: 2.5rem;
+}
+&_social{
+    font-size: 2rem;
+    display: flex;
+    justify-content:start;
+    gap: 20px;
+    padding: 10px 0px;
+}
+}
+&_box2{
+    list-style: none;
+    text-decoration: none;
+&_h3{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+&_li{
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #808080;
+}
+& :hover{
+    color: #000;
+}
+}
+}
+}

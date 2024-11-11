@@ -9,6 +9,7 @@ import Loaction from './components/location/Location'
 import Proprty from './components/property/Property'
 import Banner from './components/banner/banner'
 import Agents from './components/agents/Agents'
+import Estimate from "./components/estimate/Estimate";
 import Contact from './components/contact/Contact'
 
 
@@ -24,7 +25,8 @@ function App() {
       <Loaction />
       <Proprty/>
       <Banner />
-      <Agents/>
+      <Agents />
+      <Estimate/>
       <Contact />
     </>
   );

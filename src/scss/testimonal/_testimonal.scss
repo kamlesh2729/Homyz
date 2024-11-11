@@ -12,11 +12,19 @@
 
 .testimonals{
 padding: 20px 12%;
+@include tablet{padding: 20px 1%;}
+@include phone{padding: 20px 1%;}
 &_slidebox{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+@include tablet{
+    flex-direction: column;
+}
+@include phone{
+    flex-direction: column;
+}
 &_user1{
     display: flex;
     flex-direction: column;

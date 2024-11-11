@@ -41,18 +41,35 @@ font-weight: 700;
     grid-template-columns: repeat(1,1fr);
 }
 &_card{
+    height: 450px;
     background: #fff;
     padding: 15px;
     border-radius: 10px;
+&_imgbox{
+    transition: all ease-out 0.5s;
+    position: relative;
+& ::after{
+        content: "For Rent";
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        padding: 4px 12px;
+        background-color: green;
+        color: #fff;
+        border-radius: 5px;
+    }
 &_img{
-height: 250px;
-border-radius: 10px;
+        height: 250px;
+        border-radius: 10px;
+    }
+& :hover {
+        transform: scale(1.05);
+    }
 }
 &_name{
     font-size: 22px;
     font-weight: 700;
-    margin-top: 8px;
-    margin-bottom: 5px;
+    padding: 10px 0px;
 }
 &_location{
     font-size: 13px;
@@ -68,12 +85,14 @@ border-radius: 10px;
     font-size: 13px;
     font-weight: 600;
     color: rgb(141, 141, 141);
+    margin: 10px 0px;
 }
 &_price{
     padding: 8px 3px;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 700;
 }
 }
 }

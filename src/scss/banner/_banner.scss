@@ -15,14 +15,30 @@
     @extend %align-jusctify-center;
     gap: 30px;
     padding: 90px 12%;
-    background: url(./assets/banner/Banner-bg.jpg);
-    background-size:cover;
-    background-position:center;
+    background:url(./assets/banner/Banner-bg.jpg);
+    background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+@include tablet{flex-direction: column;}
+@include phone{flex-direction: column;}
+& ::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.062), transparent);
+    z-index: -1;
+}
 &_right{
     width: 50%;
+    @include tablet{width: 100%;}
+    @include phone{width: 100%;}
 &_h2{
-    width: 64%;
     font-size: 50px;
     color: #fff;
 &_sp{
@@ -32,16 +48,18 @@
 }
 }
 &_sub{
-    font-size: 13px;
+    font-size: 14px;
     color: #fff;
     padding: 15px 0px;
 
 }
 &_btn{
     border: none;
+    border-radius: 3px;
     background: #fff;
     color: $btbg;
-    padding: 8px;
+    padding: 12px;
+    font-weight: 600;
 }
 }
 &_left{
@@ -49,36 +67,106 @@
     background: #fff;
     border-radius: 15px;
     padding: 20px;
+    position: relative;
+    z-index: 1;
+@include tablet{width: 100%;}
+@include phone{width: 100%;}
+& ::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left:8px;
+    background: rgba(255, 255, 255, 0.094);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15px;
+}
+& ::after{
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(255, 255, 255, 0.039);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 15px;
+}
 &_box{
     border-bottom: 1px solid black;
 &_card1{
     display: flex;
     justify-content: space-between;
-    padding: 8px 0px;
+    padding: 2px 0px;
 &_sp{
     background: rgb(9, 108, 9);
     border-radius: 50px;
-    padding: 10px;
+    padding: 6px;
     color: #fff;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
 }
 &_p{
     font-size: 12px;
+    color: #808080;
 }
 }
 &_card2{
     display: flex;
     justify-content: space-between;
     margin: 5px 0px;
-    padding: 10px 0px;
+    padding: 2px 0px;
+&_title{
+    font-size: 20px;
+    font-weight: 700;
+}
+&_price{
+    width: 40%;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    background: #d8d3d345;
+}
+}
+&_card3{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    padding: 5px 0px;
+&_icons{
+    display: flex;
+    align-items:end;
+    gap: 3px;
+    color: #808080;
+}
+&_info{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+&_po{
+    font-size:15px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+&_sp{
+    font-size: 12px;
+    font-weight: 500;
+    color: #808080;
+}
+}
+}
 }
 }
 &_box2{
     display: flex;
     justify-content: space-between;
-    margin: 5px 0px;
-    padding: 10px 0px;
+    padding: 8px 0px 0px 0px;
+    font-size: 12px;
+&_p{
+    color: #808080;
+}
 }
 }
 }
